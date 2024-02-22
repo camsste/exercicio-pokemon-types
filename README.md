@@ -23,5 +23,6 @@ Nesse exercicio podemos usar as condicionais. Importante também utilizar tipos 
 https://www.typescriptlang.org/docs/handbook/2/objects.html
 
 Você vai receber o tipo do pokemon e retornar suas fraquezas.
+Lembrando que um pokemon pode ter mais de um tipo.
 
 Boa sorte!
