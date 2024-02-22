@@ -1,4 +1,4 @@
-# Trabalhando com condicionais no Javascript
+# Trabalhando com condicionais no Typescript
 ```
 const pokemons = [{
   name: "pikachu",
