@@ -6,7 +6,7 @@ const pokemons = [{
   weakness: ["ground"]
   }
 },
-name: "gabite",
+  name: "gabite",
   types: ["ground"],
   weakness: ["water", "grass", "ice"]
 },
