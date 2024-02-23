@@ -1,16 +1,24 @@
 # Trabalhando com condicionais no Typescript
+
 ```
-const pokemons = [{
+const pokemons = [
+{
+  name: "pikachu",
+  types: ["eletric"]
+},
+{
+  name: "gabite",
+  types: ["dragon", "ground"]
+},
+]
+```
+retorno:
+```
+{
   name: "pikachu",
   types: ["eletric"],
   weakness: ["ground"]
-  }
-},
-  name: "gabite",
-  types: ["ground"],
-  weakness: ["water", "grass", "ice"]
-},
-]
+}
 ```
 
 O objetivo é que você consiga verificar as fraquezas de cada pokemon, por exemplo:
