@@ -12,7 +12,8 @@ const pokemons = [
 },
 ]
 ```
-retorno:
+
+Retorno:
 ```
 {
   name: "pikachu",
