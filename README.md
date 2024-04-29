@@ -53,5 +53,7 @@ Cada uma pode fazer uma UI diferente, a questão aqui é vocês explorarem as te
 ## Tecnologias
 - Axios ou Fetch
 - React
+- Next para front (opcional)
+- Next para backend (opcional)
 
 Boa sorte!
