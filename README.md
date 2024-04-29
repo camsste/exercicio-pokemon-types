@@ -50,7 +50,7 @@ Cada uma pode fazer uma UI diferente, a questão aqui é vocês explorarem as te
 
 > Podem fazer tela para cada pokemon, lista de pokemons, lista de tipos de pokemons, barra de pesquisa, vocês são livres para isso. Contudo que no exercício vocês contem TODAS as fraquezas do pokemon, mesmo se ele tiver mais de um tipo. 
 
-# Tecnologias
+## Tecnologias
 - Axios ou Fetch
 - React
 
