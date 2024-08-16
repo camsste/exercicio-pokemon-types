@@ -67,4 +67,8 @@ Cada uma pode fazer uma UI diferente, a questão aqui é vocês explorarem as te
 - Next para front (opcional)
 - Next para backend (opcional)
 
+### Observação
+
+Lembre-se de usar o comando ``npm install`` para instalar as dependências necessárias e ``npm run start`` para incializar a aplicação.
+
 Boa sorte!
