@@ -1,22 +1,33 @@
-// pages/api/pokemon.js
-// pages/api/pokemon.ts
-import type { NextApiRequest, NextApiResponse } from 'next';
-import pokemons from '../../src/data/pokemonsdata';
+import { Request, Response } from 'express';
+import { pokemonData, typeWeaknesses } from '../../src/data/pokemonsdata';
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'GET') {
-    try {
-      // Mapeando as fraquezas de cada Pokémon
-      const weaknesses = pokemons.map(pokemon => ({
-        name: pokemon.name,
-        weaknesses: pokemon.weaknesses
-      }));
+export const getPokemonHandler = (req: Request, res: Response) => {
+  const { name } = req.params;
 
-      res.status(200).json(weaknesses);
-    } catch (error) {
-      res.status(500).json({ message: "Error fetching data" });
-    }
-  } else {
-    res.status(405).json({ message: "Method Not Allowed" });
+  // Encontre o pokémon pelo nome
+  const pokemon = pokemonData.find((p) => p.name.toLowerCase() === name.toLowerCase());
+
+  if (!pokemon) {
+    return res.status(404).json({ message: 'Pokémon not found' });
   }
+
+  // Obtenha as fraquezas com base nos tipos
+  const weaknesses: string[] = [];
+  pokemon.types.forEach((type) => {
+    const typeWeakness = typeWeaknesses[type];
+    if (typeWeakness) {
+      weaknesses.push(...typeWeakness);
+    }
+  });
+
+  // Remover fraquezas duplicadas
+  const uniqueWeaknesses = [...new Set(weaknesses)];
+
+  // Responder com os dados do pokémon e suas fraquezas
+  res.status(200).json({
+    name: pokemon.name,
+    types: pokemon.types,
+    weakness: uniqueWeaknesses,
+    image: pokemon.image,
+  });
 }
