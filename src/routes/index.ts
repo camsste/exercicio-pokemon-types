@@ -1,4 +1,8 @@
+import { NextResponse } from "next/server";
+import pokemons from "../data/pokemonsdata"
 import Router from "express";
+
+
 
 export const router = Router();
 
