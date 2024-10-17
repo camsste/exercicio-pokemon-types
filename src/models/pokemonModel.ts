@@ -3,4 +3,5 @@ export interface Pokemon {
   types: string[],
   weaknesses: string[],
   image: string
+  id: number
 }
