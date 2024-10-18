@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/aceleradora-TW/exercicio-pokemon-types#readme",
   "dependencies": {
-    "axios": "^1.6.8",
+    "axios": "^1.7.7",
+    "exercicio-pokemon-types": "file:",
     "express": "^4.21.1",
     "next": "^14.2.15"
   },
