@@ -1,16 +1,11 @@
 import Router from "express";
-import { getPokemonHandler } from "../../pages/api/pokemon";
+import { getPokemonHandler, getAllPokemons } from "../../pages/api/pokemon";
 
 export const router = Router();
 
-// Exemplo de como a API funciona
-router.get("/", function (req, res) {
-  try {
-    res.status(200).send("Hello World");
-  } catch (error) {
-    res.status(500).send("Error fetching data");
-  }
-});
+// Rota para buscar todos os Pokémon
+router.get("/pokemon", getAllPokemons); // Nova rota para buscar todos os Pokémon
 
-// Rota para buscar Pokémon
+// Rota para buscar um Pokémon específico
 router.get("/pokemon/:name", getPokemonHandler);
+

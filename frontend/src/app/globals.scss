@@ -7,3 +7,45 @@
 body {
     background-color: #020617;
 }
+
+p {
+  font-family: Arial, Helvetica, sans-serif ;
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #ffffff; 
+  text-align: left ;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif ;
+  margin: 10px 0 5px;
+  font-size: 30px;
+  color: #ffffff; 
+  text-align: left ;
+  margin: 40px 0px 20px; /* Adiciona margem de 10px em cima, 15px nos lados e 20px embaixo */
+  text-transform: uppercase;
+}
+
+img {
+  width: 280px;
+  height: 300px; /* Define uma altura fixa para garantir uniformidade */
+  object-fit: cover; /* Garante que as imagens sejam cortadas adequadamente */
+}
+
+.search-input {
+  width: 100%;
+  text-align: center ;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+div {
+  margin: 10px 15px 180px
+}
+
+pokemon-list { 
+  align-items: center;
+}
